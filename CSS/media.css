@@ -1,0 +1,161 @@
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        flex-direction: column;
+        overflow: auto;
+        font-size: 0.75rem; /* Reduce el tamaño de fuente general */
+    }
+
+    /* Ajustes al menú de navegación */
+    nav {
+        height: auto;
+        flex-direction: row;
+        padding: 0.3rem; /* Menor espacio en el nav */
+    }
+
+    .nav1, .nav2, .nav3 {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .ulnav {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    li {
+        margin: 0.2rem 0; /* Reduce el espacio entre enlaces */
+    }
+
+
+    .links {
+        font-size: 0.7rem; /* Tamaño de texto más pequeño */
+        padding: 0.2rem; /* Espaciado más compacto */
+    }
+
+    /* Ajustes a las tablas en la sección de descargas */
+    table {
+        width: 90%; /* Reduce el ancho de la tabla */
+        margin: 0 auto;
+        font-size: 0.65rem; /* Tamaño de texto más reducido */
+        border-collapse: collapse;
+    }
+
+    thead {
+        display: none; /* Oculta los encabezados en pantallas pequeñas */
+    }
+
+    tbody, tr {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.2rem; /* Espaciado interno reducido */
+        border-bottom: 1px solid #ddd;
+    }
+
+    td::before {
+        content: attr(data-label); /* Usa data-label para encabezados */
+        font-weight: bold;
+        width: 50%;
+        text-align: left;
+        font-size: 0.65rem; /* Texto más pequeño en data-label */
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
+
+    .DIVISIONES-CONTENIDO {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 1rem;
+        background: rgba(128, 128, 128, 0.54);
+    }
+    
+    .imgcont {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border-radius: 1rem;
+    }
+    /* Ajustes específicos a la sección descargas */
+    #seccion_descargas {
+        padding: 0.3rem;
+        font-size: 0.7rem; /* Tamaño reducido */
+    }
+
+    .tabla-contenedor {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .tabla-descripcion {
+        font-size: 0.65rem; /* Tamaño más pequeño para descripciones */
+    }
+
+    .mapaGoogle, .columnaDatos {
+        flex-direction: column;
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .datosContacto, .formulario {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #formulario-2 input, #formulario-2 textarea {
+        width: 95%;
+        margin: 0.3rem auto;
+        font-size: 0.7rem; /* Texto reducido */
+    }
+
+    #formulario-2 button {
+        width: 95%;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .titulos{
+        text-align: center;
+        font-size: 100%;
+        object-fit: contain;
+        color: black;
+    }
+
+    #seccion_contacto {
+        height: 150vh;
+    }
+
+     .columnaDatos {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #formulario-2 {
+        width: 60vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logoimg{
+        height: 10vh;
+        width: 15vh;
+    }
+}
